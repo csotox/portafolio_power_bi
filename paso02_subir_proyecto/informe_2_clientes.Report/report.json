@@ -1,0 +1,51 @@
+{
+  "config": "{\"version\":\"5.49\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU11\",\"version\":\"5.49\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU11",
+            "path": "BaseThemes/CY23SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"7bcefe017bb5b9c1c7af\",\"layouts\":[{\"id\":0,\"position\":{\"x\":56.413373860182375,\"y\":350.1519756838906,\"z\":1,\"width\":1166.2006079027356,\"height\":299.5744680851064,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(clientes.id)\"}],\"Category\":[{\"queryRef\":\"clientes.fecha_nacimiento.Variación.Jerarquía de fechas.Año\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"clientes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"id\"}},\"Function\":5},\"Name\":\"Sum(clientes.id)\",\"NativeReferenceName\":\"Recuento de id\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variación\",\"Property\":\"fecha_nacimiento\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Año\"},\"Name\":\"clientes.fecha_nacimiento.Variación.Jerarquía de fechas.Año\",\"NativeReferenceName\":\"fecha_nacimiento Año\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variación\",\"Property\":\"fecha_nacimiento\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Año\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 299.57,
+          "width": 1166.20,
+          "x": 56.41,
+          "y": 350.15,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"b60395b13fd7e038e98d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":499.9392097264438,\"y\":126.44376899696049,\"z\":0,\"width\":280.1215805471125,\"height\":149.7872340425532,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Sum(clientes.id)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"clientes\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"id\"}},\"Function\":2},\"Name\":\"Sum(clientes.id)\",\"NativeReferenceName\":\"Número de clientes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"id\"}},\"Function\":2}}}]},\"columnProperties\":{\"Sum(clientes.id)\":{\"displayName\":\"Número de clientes\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 149.79,
+          "width": 280.12,
+          "x": 499.94,
+          "y": 126.44,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

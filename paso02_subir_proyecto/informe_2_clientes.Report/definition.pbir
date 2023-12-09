@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../informe_2_clientes.Dataset"
+    },
+    "byConnection": null
+  }
+}
